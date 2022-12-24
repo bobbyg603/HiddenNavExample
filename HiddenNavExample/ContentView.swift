@@ -77,7 +77,7 @@ struct ContentView: View {
             NavigationLink("Result", value: "result")
                 .hidden()
                 .navigationDestination(isPresented: $showResult) {
-                    ResultView()
+                    ResultView(result: result)
                 }
         }
     }

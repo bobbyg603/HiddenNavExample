@@ -9,13 +9,19 @@ import SwiftUI
 
 struct ResultView: View {
     
+    private var message: String
+    
+    init(result: String) {
+        self.message = result
+    }
+    
     var body: some View {
-        Text("Hello world")
+        Text(message)
     }
 }
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView()
+        ResultView(result: "Hello world")
     }
 }
